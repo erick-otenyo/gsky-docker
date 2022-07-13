@@ -1,7 +1,7 @@
 #!/bin/bash
 set -xeu
 
-v=3.0.4
+v=3.2.0
 (set -xeu
 wget -q http://download.osgeo.org/gdal/${v}/gdal-${v}.tar.gz
 tar -xf gdal-${v}.tar.gz
