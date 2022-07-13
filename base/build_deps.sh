@@ -140,7 +140,7 @@ v=4.2.13
     set -xeu
     wget -q https://support.hdfgroup.org/ftp/HDF/releases/HDF${v}/src/hdf-${v}.tar.gz
     tar -xf hdf-${v}.tar.gz && cd hdf-${v}
-    ./configure --enable-shared --disable-fortran --prefix="$prefix" --enable-hdf4-xdr
+    ./configure --enable-shared --disable-fortran --prefix="$prefix"
     make -j4
     make install
 )
