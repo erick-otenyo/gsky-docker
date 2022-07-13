@@ -135,10 +135,10 @@ v=6.1.1
 rm -rf proj-${v}
 rm -f proj-${v}.tar.gz
 
-v=4.2.13
+v=4.2.15
 (
     set -xeu
-    wget -q https://support.hdfgroup.org/ftp/HDF/HDF_Current/src/hdf-${v}.tar.gz
+    wget -q https://support.hdfgroup.org/ftp/HDF/releases/HDF${v}/src/hdf-${v}.tar.gz
     tar -xf hdf-${v}.tar.gz
     cd hdf-${v}
     ./configure --enable-shared --disable-fortran --prefix="$prefix"
