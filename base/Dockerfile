@@ -9,9 +9,6 @@ RUN apt-get update \
 COPY ./build_deps.sh /
 RUN ./build_deps.sh
 
-COPY ./build_deps_2.sh /
-RUN ./build_deps_2.sh
-
 COPY ./build_gdal.sh /
 RUN ./build_gdal.sh
 
