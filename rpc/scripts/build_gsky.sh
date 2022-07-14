@@ -1,14 +1,11 @@
 #!/bin/bash
 set -xeu
-DEFAULT_GSKY_REPO='https://github.com/nci/gsky.git'
+DEFAULT_GSKY_REPO='https://github.com/icpac-igad/gsky.git'
 gsky_repo="${1:-$DEFAULT_GSKY_REPO}"
 gsky_branch="${2:-}"
 
 C_INCLUDE_PATH=$(nc-config --includedir)
 export C_INCLUDE_PATH
-
-export GOROOT=/go
-export PATH="$PATH:$GOROOT/bin"
 
 gsky_src_root=/gsky/gsky_src
 mkdir -p $gsky_src_root

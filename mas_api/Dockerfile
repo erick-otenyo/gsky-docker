@@ -1,9 +1,9 @@
 FROM eahazardswatch.icpac.net/gsky-base:latest
-LABEL maintainer="Erick Otenyo <eotenyo@icpac.net" 
+LABEL maintainer="Erick Otenyo <eotenyo@icpac.net"
 
 RUN apt-get update \
       && apt-get install -y --no-install-recommends \
-      jq
+      postgresql-client
 
 COPY ./scripts/build_webhook.sh /
 RUN ./build_webhook.sh
@@ -14,12 +14,15 @@ RUN chmod +x /wait
 COPY ./scripts/build_gsky.sh /
 RUN ./build_gsky.sh
 
-COPY ./scripts/reload_ows_config.sh /
+COPY ./scripts/ingest.sh /
+COPY ./scripts/ingest_data.sh /
 
 COPY ./hooks.conf /hooks.conf
 
 COPY ./entrypoint.sh /
 
 ENV TZ=Africa/Nairobi
+
+EXPOSE 8888
 
 ENTRYPOINT /wait && ./entrypoint.sh
