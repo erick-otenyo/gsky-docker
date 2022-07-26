@@ -13,7 +13,7 @@ WEBHOOK_SECRET=${WEBHOOK_SECRET:-""}
 WEBHOOK_ENABLED=${WEBHOOK_ENABLED:-false}
 
 # Check if the public.shards table already exists. If not, we need to initialize the schemas and functions for mas
-# This is to avoid recreating the MAS tables each time we restart, and we are using a volume to store database data
+# This is to avoid recreating the MAS tables each time we restart, especially when using a volume to store database data
 if [ "$(psql -d ${PGDB} -XtAc "SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'shards')")" = 't' ]
 then
     echo "MAS database already initialized. Skipping..."

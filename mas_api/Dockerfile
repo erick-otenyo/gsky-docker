@@ -16,6 +16,8 @@ RUN ./build_gsky.sh
 
 COPY ./scripts/ingest.sh /
 COPY ./scripts/ingest_data.sh /
+COPY ./scripts/reset_mas.sh /
+
 
 COPY ./hooks.conf /hooks.conf
 
