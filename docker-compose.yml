@@ -20,8 +20,8 @@ services:
     environment: 
       - WAIT_HOSTS=gsky_mas_db:5432
       - WAIT_TIMEOUT=120
-      - OWS_HOSTNAME=eahazardswatch.icpac.net/gsky
-      - OWS_PROTOCOL=http
+      - OWS_HOSTNAME=${GSKY_OWS_HOSTNAME}
+      - OWS_PROTOCOL=${GSKY_OWS_PROTOCOL}
       - MAS_ADDRESS=gsky_mas_api:8888
       - WORKER_NODES="gsky_rpc_1:6000","gsky_rpc_2:6000"
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
