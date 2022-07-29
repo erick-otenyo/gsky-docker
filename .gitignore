@@ -1,4 +1,7 @@
 .DS_Store
 .env
+ows/templates/WPS
+ows/config/config.json
+ows/rulesets
 
 data

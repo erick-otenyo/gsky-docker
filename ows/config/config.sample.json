@@ -1,0 +1,13 @@
+{
+  "service_config": {
+    "ows_hostname": "localhost",
+    "ows_protocol": "http",
+    "mas_address": "gsky_mas_api:8888",
+    "worker_nodes": [
+      "gsky_rpc_1:6000",
+      "gsky_rpc_2:6000"
+    ]
+  },
+  "layers": [],
+  "processes": []
+}
