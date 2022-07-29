@@ -27,7 +27,7 @@ services:
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
       - WEBHOOK_ENABLED=true
     ports:
-      - 8080:8080
+      - 8080
       - 9000
   gsky_mas_db:
     image: postgis/postgis:12-master
@@ -64,7 +64,7 @@ services:
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
       - WEBHOOK_ENABLED=true
     ports:
-      - 8888:8888
+      - 8888
       - 9000
   gsky_rpc_1:
     image: eahazardswatch.icpac.net/gsky-rpc:latest
@@ -110,6 +110,20 @@ services:
         - GSKY_OWS_URL=http://gsky_ows:8080/ows
         - GSKY_MAS_URL=http://gsky_mas_api:8888
       ports:
-        - 3000:3000
+        - 3000
+  gsky_nginx:
+      image: eahazardswatch.icpac.net/gsky-nginx:latest
+      build:
+        context: ./nginx
+      container_name: gsky_nginx
+      # command: sh -c "/wait && nginx -g 'daemon off;'"
+      restart: ${RESTART_POLICY}
+      environment:
+        - WAIT_HOSTS=gsky_ows:8080, gsky_mas_api:8888, gsky_wps_client:3000
+        - WAIT_TIMEOUT=120
+      volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      ports:
+        - 80:80
 volumes:
   gsky_mas_db:

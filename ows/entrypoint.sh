@@ -22,7 +22,7 @@ GSKY_WMS_GEOMS_FILE=${GSKY_WMS_GEOMS_FILE:-""}
 
 ows_port=8080
 
-./gsky/bin/gsky-ows -p $ows_port &
+./gsky/bin/gsky-ows -p $ows_port -v &
 sleep 0.5
 
 set +x
@@ -37,8 +37,8 @@ echo '=========================================================='
 
 if [ "$WEBHOOK_ENABLED" = true ] && [ -n "$WEBHOOK_SECRET" ]; then
   # Replace secret key for webhooks from env
-  sed -i 's/\[WEBHOOK_SECRET\]/'${WEBHOOK_SECRET}'/' /hooks.conf
-  ./webhook -hooks /hooks.conf -verbose
+  sed -i 's/\[WEBHOOK_SECRET\]/'${WEBHOOK_SECRET}'/' /hooks.yaml
+  ./webhook -hooks /hooks.yaml -verbose
 else
   echo "Webhooks not enabled"
 fi

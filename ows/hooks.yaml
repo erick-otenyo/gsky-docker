@@ -1,0 +1,14 @@
+- id: reload-config
+  execute-command: /reload_ows_config.sh
+  response-message: "Gsky configuration-reload command sent successfully"
+  http-methods:
+    - POST
+  incoming-payload-content-type: "application/json"
+  trigger-rule:
+    match:
+      type: payload-hmac-sha256
+      secret: [WEBHOOK_SECRET]
+      parameter:
+        source: header
+        name: X-Gsky-Signature
+  trigger-rule-mismatch-http-response-code: 400

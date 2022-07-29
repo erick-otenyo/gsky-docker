@@ -16,7 +16,7 @@ RUN ./build_gsky.sh
 
 COPY ./scripts/reload_ows_config.sh /
 
-COPY ./hooks.conf /hooks.conf
+COPY ./hooks.yaml /hooks.yaml
 
 COPY ./entrypoint.sh /
 

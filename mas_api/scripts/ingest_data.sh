@@ -13,7 +13,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH:-}"
 
 export PGUSER=postgres
 export PGDATA=/pg_data
-MEMCACHE_DEV_TCP_FILE=${MEMCACHE_DEV_TCP_FILE:=-""}
+MEMCACHE_DEV_TCP_FILE=${MEMCACHE_DEV_TCP_FILE:=""}
 
 set +x
 res=$(find "$CRAWL_DIR" -name "${CRAWL_PATTERN}")

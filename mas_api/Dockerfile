@@ -19,7 +19,7 @@ COPY ./scripts/ingest_data.sh /
 COPY ./scripts/reset_mas.sh /
 
 
-COPY ./hooks.conf /hooks.conf
+COPY ./hooks.yaml /hooks.yaml
 
 COPY ./entrypoint.sh /
 

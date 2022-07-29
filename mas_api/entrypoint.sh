@@ -44,8 +44,8 @@ echo '=========================================================='
 # Webhooks to reload data
 if [ "$WEBHOOK_ENABLED" = true ] && [ -n "$WEBHOOK_SECRET" ]; then
   # Replace secret key for webhooks from env
-  sed -i 's/\[WEBHOOK_SECRET\]/'${WEBHOOK_SECRET}'/' /hooks.conf
-  ./webhook -hooks /hooks.conf -verbose
+  sed -i 's/\[WEBHOOK_SECRET\]/'${WEBHOOK_SECRET}'/' /hooks.yaml
+  ./webhook -hooks /hooks.yaml -verbose
 
   echo '=========================================================='
   echo "Webhooks end point:       http://127.0.0.1:9000"
