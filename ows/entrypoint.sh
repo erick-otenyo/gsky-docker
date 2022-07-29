@@ -22,7 +22,14 @@ GSKY_WMS_GEOMS_FILE=${GSKY_WMS_GEOMS_FILE:-""}
 
 ows_port=8080
 
-./gsky/bin/gsky-ows -p $ows_port -v &
+if [ -n "$GSKY_WMS_GEOMS_FILE" ]; then
+   #geometry clipping file is specified
+  ./gsky/bin/gsky-ows -p $ows_port -geom_file $GSKY_WMS_GEOMS_FILE -v &
+else
+  # No geometry clipping file specified
+  ./gsky/bin/gsky-ows -p $ows_port -v &
+fi
+
 sleep 0.5
 
 set +x
