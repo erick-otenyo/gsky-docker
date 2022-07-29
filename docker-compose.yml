@@ -50,7 +50,7 @@ services:
         gsky_branch: ${GSKY_BRANCH}
     restart: ${RESTART_POLICY}
     volumes:
-      - ./data:/gskydata
+      - ${GSKY_DATA_FOLDER}:/gskydata
       - ./mas_api/scripts/ingest.sh:/ingest.sh
       - ./ows/rulesets:/rulesets
     environment:
@@ -76,7 +76,7 @@ services:
         gsky_branch: ${GSKY_BRANCH}
     restart: ${RESTART_POLICY}
     volumes:
-      - ./data:/gskydata
+      - ${GSKY_DATA_FOLDER}:/gskydata
     environment:
       - WAIT_HOSTS=gsky_mas_db:5432
       - WAIT_TIMEOUT=120
@@ -92,7 +92,7 @@ services:
           gsky_branch: ${GSKY_BRANCH}
       restart: ${RESTART_POLICY}
       volumes:
-        - ./data:/gskydata
+        - ${GSKY_DATA_FOLDER}:/gskydata
       environment:
         - WAIT_HOSTS=gsky_mas_db:5432
         - WAIT_TIMEOUT=120
