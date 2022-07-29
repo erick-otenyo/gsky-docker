@@ -115,7 +115,7 @@ services:
       image: eahazardswatch.icpac.net/gsky-nginx:latest
       build:
         context: ./nginx
-      container_name: gsky_nginx
+      container_name: gsky_nginx_proxy
       # command: sh -c "/wait && nginx -g 'daemon off;'"
       restart: ${RESTART_POLICY}
       environment:
