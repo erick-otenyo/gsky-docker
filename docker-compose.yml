@@ -124,6 +124,6 @@ services:
       volumes:
         - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       ports:
-        - 80:80
+        - ${NGINX_PUBLIC_PORT}:80
 volumes:
   gsky_mas_db:
