@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# Script to help in crawling directories
+# This script ensures you only crawl the namespace and directories you want, and not everything.
+
+# Example usage
+#/ingest.sh -n daily_total_rainfall -p /gskydata/RAINFALL/DAILY -t nc 
+
+# -n = dataset namespace
+# -p = path to the directory where the files to be crawled are stored
+# -t = the data type extensions to crawls. Must be either nc for NetCDFs or tif for Geotiffs, without the dot "."
+# -x = optional args to pass to the crawler. Please consult the crawl code for available options
+
+# With extra args:
+# /ingest.sh -n chirps_daily -p /gskydata/CHIRPS/DAILY -t tif -x "-conf /rulesets/chirps_daily.json"
+
 set -xeu
 
 namespace=""
@@ -51,3 +65,8 @@ fi
 
 # run crawl command
 /ingest_data.sh ${namespace} ${path} ${datatype} "${extra}"
+
+
+
+
+
