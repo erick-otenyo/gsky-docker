@@ -38,7 +38,7 @@ services:
       - 5432
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=mas
   gsky_mas_api:
     image: eahazardswatch.icpac.net/gsky-mas:latest
@@ -59,7 +59,7 @@ services:
       - PGHOST=gsky_mas_db
       - PGPORT=5432
       - PGUSER=postgres
-      - PGPASSWORD=postgres
+      - PGPASSWORD=${POSTGRES_PASSWORD}
       - PGDB=mas
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
       - WEBHOOK_ENABLED=true
