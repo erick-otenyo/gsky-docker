@@ -62,7 +62,7 @@ services:
       - ${GSKY_DATA_FOLDER}:/gskydata
       - /Users/otenyo/Projects/wmo/data-etl/public/tera:/gdata
       - ./mas_api/scripts/ingest.sh:/ingest.sh
-      - ./mas_api/ingest_scripts:/ingest_scripts
+      - ./ingest_scripts:/ingest_scripts
       - ./ows/rulesets:/rulesets
     environment:
       - WAIT_HOSTS=gsky_mas_db:5432
