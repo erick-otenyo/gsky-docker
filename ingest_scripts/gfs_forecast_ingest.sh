@@ -5,7 +5,7 @@ set -xeu
 /ingest.sh -n gfs_precipitation_1_hr -p /gskydata/gfs/gfs-precipitation-1-hr -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 
 # GFS Temperature
-/ingest.sh -n gfs_temperature_2_m -p /gskydata/gfs/gfs-temperature-2-m -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTHM.tif.json"
+/ingest.sh -n gfs_temperature_2_m -p /gskydata/gfs/gfs-temperature-2-m -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 /ingest.sh -n gfs_temperature_200_mb -p /gskydata/gfs/gfs-temperature-200-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 /ingest.sh -n gfs_temperature_500_mb -p /gskydata/gfs/gfs-temperature-500-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 
