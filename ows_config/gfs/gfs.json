@@ -1,0 +1,545 @@
+{
+    "service_config": {
+        "ows_hostname": "",
+        "ows_protocol": "http",
+        "mas_address": "",
+        "worker_nodes": []
+    },
+    "layers": [{
+            "name": "gfs_precipitation_1_hr",
+            "title": "GFS Precipitation",
+            "data_source": "/gskydata/gfs/gfs-precipitation-1-hr",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_precipitation_1_hr"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 245,
+                        "G": 245,
+                        "B": 245,
+                        "A": 255
+                    },
+                    {
+                        "R": 79,
+                        "G": 87,
+                        "B": 183,
+                        "A": 255
+                    },
+                    {
+                        "R": 85,
+                        "G": 78,
+                        "B": 177,
+                        "A": 255
+                    },
+                    {
+                        "R": 67,
+                        "G": 105,
+                        "B": 196,
+                        "A": 255
+                    },
+                    {
+                        "R": 64,
+                        "G": 160,
+                        "B": 180,
+                        "A": 255
+                    },
+                    {
+                        "R": 78,
+                        "G": 194,
+                        "B": 98,
+                        "A": 255
+                    },
+                    {
+                        "R": 149,
+                        "G": 219,
+                        "B": 70,
+                        "A": 255
+                    },
+                    {
+                        "R": 220,
+                        "G": 234,
+                        "B": 55,
+                        "A": 255
+                    },
+                    {
+                        "R": 235,
+                        "G": 192,
+                        "B": 56,
+                        "A": 255
+                    },
+                    {
+                        "R": 234,
+                        "G": 164,
+                        "B": 62,
+                        "A": 255
+                    },
+                    {
+                        "R": 233,
+                        "G": 123,
+                        "B": 72,
+                        "A": 255
+                    },
+                    {
+                        "R": 225,
+                        "G": 84,
+                        "B": 93,
+                        "A": 255
+                    },
+                    {
+                        "R": 190,
+                        "G": 48,
+                        "B": 102,
+                        "A": 255
+                    },
+                    {
+                        "R": 147,
+                        "G": 23,
+                        "B": 78,
+                        "A": 255
+                    },
+                    {
+                        "R": 84,
+                        "G": 16,
+                        "B": 41,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0,
+            "scale_value": 5.08,
+            "clip_value": 50
+        },
+        {
+            "name": "gfs_temperature_2_m",
+            "title": "GFS Temperature 2 M",
+            "data_source": "/gskydata/gfs/gfs-temperature-2-m",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_temperature_2_m"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 149,
+                        "G": 137,
+                        "B": 211,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 209,
+                        "B": 216,
+                        "A": 255
+                    },
+                    {
+                        "R": 129,
+                        "G": 204,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 103,
+                        "G": 180,
+                        "B": 186,
+                        "A": 255
+                    },
+                    {
+                        "R": 95,
+                        "G": 143,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 80,
+                        "G": 140,
+                        "B": 62,
+                        "A": 255
+                    },
+                    {
+                        "R": 121,
+                        "G": 146,
+                        "B": 28,
+                        "A": 255
+                    },
+                    {
+                        "R": 171,
+                        "G": 161,
+                        "B": 14,
+                        "A": 255
+                    },
+                    {
+                        "R": 223,
+                        "G": 177,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 243,
+                        "G": 150,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 236,
+                        "G": 95,
+                        "B": 21,
+                        "A": 255
+                    },
+                    {
+                        "R": 190,
+                        "G": 65,
+                        "B": 18,
+                        "A": 255
+                    },
+                    {
+                        "R": 138,
+                        "G": 43,
+                        "B": 10,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": 20,
+            "scale_value": 4.233333333333333,
+            "clip_value": 60
+        },
+        {
+            "name": "gfs_temperature_200_mb",
+            "title": "GFS Temperature 200 mb",
+            "data_source": "/gskydata/gfs/gfs-temperature-200-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_temperature_200_mb"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 149,
+                        "G": 137,
+                        "B": 211,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 209,
+                        "B": 216,
+                        "A": 255
+                    },
+                    {
+                        "R": 129,
+                        "G": 204,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 103,
+                        "G": 180,
+                        "B": 186,
+                        "A": 255
+                    },
+                    {
+                        "R": 95,
+                        "G": 143,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 80,
+                        "G": 140,
+                        "B": 62,
+                        "A": 255
+                    },
+                    {
+                        "R": 121,
+                        "G": 146,
+                        "B": 28,
+                        "A": 255
+                    },
+                    {
+                        "R": 171,
+                        "G": 161,
+                        "B": 14,
+                        "A": 255
+                    },
+                    {
+                        "R": 223,
+                        "G": 177,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 243,
+                        "G": 150,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 236,
+                        "G": 95,
+                        "B": 21,
+                        "A": 255
+                    },
+                    {
+                        "R": 190,
+                        "G": 65,
+                        "B": 18,
+                        "A": 255
+                    },
+                    {
+                        "R": 138,
+                        "G": 43,
+                        "B": 10,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": 20,
+            "scale_value": 4.233333333333333,
+            "clip_value": 60
+        },
+        {
+            "name": "gfs_temperature_500_mb",
+            "title": "GFS Temperature 500 mb",
+            "data_source": "/gskydata/gfs/gfs-temperature-500-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_temperature_500_mb"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 149,
+                        "G": 137,
+                        "B": 211,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 209,
+                        "B": 216,
+                        "A": 255
+                    },
+                    {
+                        "R": 129,
+                        "G": 204,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 103,
+                        "G": 180,
+                        "B": 186,
+                        "A": 255
+                    },
+                    {
+                        "R": 95,
+                        "G": 143,
+                        "B": 197,
+                        "A": 255
+                    },
+                    {
+                        "R": 80,
+                        "G": 140,
+                        "B": 62,
+                        "A": 255
+                    },
+                    {
+                        "R": 121,
+                        "G": 146,
+                        "B": 28,
+                        "A": 255
+                    },
+                    {
+                        "R": 171,
+                        "G": 161,
+                        "B": 14,
+                        "A": 255
+                    },
+                    {
+                        "R": 223,
+                        "G": 177,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 243,
+                        "G": 150,
+                        "B": 6,
+                        "A": 255
+                    },
+                    {
+                        "R": 236,
+                        "G": 95,
+                        "B": 21,
+                        "A": 255
+                    },
+                    {
+                        "R": 190,
+                        "G": 65,
+                        "B": 18,
+                        "A": 255
+                    },
+                    {
+                        "R": 138,
+                        "G": 43,
+                        "B": 10,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": 20,
+            "scale_value": 4.233333333333333,
+            "clip_value": 60
+        },
+        {
+            "name": "gfs_wind_10_m",
+            "title": "GFS Wind 10 M",
+            "data_source": "/gskydata/gfs/gfs-wind-10-m",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_10_m"
+            ]
+        },
+        {
+            "name": "gfs_wind_200_mb",
+            "title": "GFS Wind 200 mb",
+            "data_source": "/gskydata/gfs/gfs-wind-200-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_200_mb"
+            ]
+        },
+        {
+            "name": "gfs_wind_500_mb",
+            "title": "GFS Wind 500 mb",
+            "data_source": "/gskydata/gfs/gfs-wind-500-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_500_mb"
+            ]
+        },
+        {
+            "name": "gfs_relative_humidity_2_m",
+            "title": "GFS Relative Humidity 2 M",
+            "data_source": "/gskydata/gfs/gfs-relative-humidity-2-m",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_relative_humidity_2_m"
+            ]
+        },
+        {
+            "name": "gfs_relative_humidity_200_mb",
+            "title": "GFS Relative Humidity 200 mb",
+            "data_source": "/gskydata/gfs/gfs-relative-humidity-200-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_relative_humidity_200_mb"
+            ]
+        },
+        {
+            "name": "gfs_relative_humidity_500_mb",
+            "title": "GFS Relative Humidity 500 mb",
+            "data_source": "/gskydata/gfs/gfs-relative-humidity-500-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_relative_humidity_500_mb"
+            ]
+        },
+        {
+            "name": "gfs_mean_sea_level_pressure",
+            "title": "GFS Mean Sea Level Pressure",
+            "data_source": "/gskydata/gfs/gfs-mean-sea-level-pressure",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_mean_sea_level_pressure"
+            ]
+        },
+        {
+            "name": "gfs_precipitable_water_total",
+            "title": "GFS Precipitable Water Total",
+            "data_source": "/gskydata/gfs/gfs-precipitable-water-total",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_precipitable_water_total"
+            ]
+        },
+        {
+            "name": "gfs_cloud_water_total",
+            "title": "GFS Cloud Water Total",
+            "data_source": "/gskydata/gfs/gfs-cloud-water-total",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_cloud_water_total"
+            ]
+        },
+        {
+            "name": "gfs_sunshine_1_hr",
+            "title": "GFS Sunshine 1 hr",
+            "data_source": "/gskydata/gfs/gfs-sunshine-1-hr",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_sunshine_1_hr"
+            ]
+        }
+    ],
+    "processes": [{
+            "data_sources": [{
+                "data_source": "/gskydata/gfs/gfs-precipitation-1-hr",
+                "rgb_products": [
+                    "gfs_precipitation_1_hr"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "gfs_precipitation_1hr_GeometryDrill",
+            "title": "GFS Precipitation Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        },
+        {
+            "data_sources": [{
+                "data_source": "/gskydata/gfs/gfs-temperature-2-m",
+                "rgb_products": [
+                    "gfs_temperature_2_m"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "gfs_temperature_2m_GeometryDrill",
+            "title": "GFS Temperature Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        }
+    ],
+    "wms_clip_config": {
+        "vector_file": "/gsky/geodata/geom.gpkg",
+        "layer_name": "boundary",
+        "attribute_name": "cartodb_id"
+    }
+}

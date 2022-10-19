@@ -16,9 +16,8 @@ services:
         gsky_repo: ${GSKY_REPO}
         gsky_branch: ${GSKY_BRANCH}
     restart: ${RESTART_POLICY}
-    command: tail -f /dev/null
     volumes:
-      - ${GSKY_CONFIG_FOLDER}:/gsky/etc
+      - ./ows_config:/gsky/etc
       - ./ows/templates/WMS_GetCapabilities.tpl:/gsky/share/gsky/templates/WMS_GetCapabilities.tpl
       - ./ows/templates/WPS_GetCapabilities.tpl:/gsky/share/gsky/templates/WPS_GetCapabilities.tpl
       - ./ows/templates/WCS_GetCapabilities.tpl:/gsky/share/gsky/templates/WCS_GetCapabilities.tpl

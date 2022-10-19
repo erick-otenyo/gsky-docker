@@ -1,0 +1,10 @@
+{
+    "service_config": {
+        "ows_hostname": "",
+        "ows_protocol": "http",
+        "mas_address": "",
+        "worker_nodes": []
+    },
+    "layers": [],
+    "processes": []
+}
