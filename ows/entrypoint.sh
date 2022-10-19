@@ -13,22 +13,22 @@ WORKER_NODES=${WORKER_NODES:-'127.0.0.1:6000'}
 
 WORKER_NODES=', ' read -r -a array <<<$WORKER_NODES
 
-# update config.json file
-tmp=$(mktemp)
-jq '.service_config |= . + {"ows_hostname":"'${OWS_HOSTNAME}'","ows_protocol":"'${OWS_PROTOCOL}'","mas_address":"'${MAS_ADDRESS}'", "worker_nodes":['${WORKER_NODES}']}' \
-  /gsky/etc/config.json >"$tmp" && mv "$tmp" /gsky/etc/config.json
+MEMCACHE_URI=${MEMCACHE_URI:=-""}
 
-GSKY_WMS_GEOMS_FILE=${GSKY_WMS_GEOMS_FILE:-""}
+# update config.json files
+config_dir="/gsky/etc"
+config_files=$(find $config_dir -type f -name '*.json')
+
+for file in $config_files
+do
+  tmp=$(mktemp)
+  jq '.service_config |= . + {"ows_hostname":"'${OWS_HOSTNAME}'","ows_protocol":"'${OWS_PROTOCOL}'","mas_address":"'${MAS_ADDRESS}'", "worker_nodes":['${WORKER_NODES}']}' \
+  $file >"$tmp" && mv "$tmp" $file
+done;
 
 ows_port=8080
 
-if [ -n "$GSKY_WMS_GEOMS_FILE" ]; then
-   #geometry clipping file is specified
-  ./gsky/bin/gsky-ows -p $ows_port -geom_file $GSKY_WMS_GEOMS_FILE -v &
-else
-  # No geometry clipping file specified
-  ./gsky/bin/gsky-ows -p $ows_port -v &
-fi
+./gsky/bin/gsky-ows -p $ows_port -memcache $MEMCACHE_URI -v &
 
 sleep 0.5
 

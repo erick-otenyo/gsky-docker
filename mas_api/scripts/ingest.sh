@@ -58,6 +58,10 @@ if [ "$datatype" = "nc" ]; then
     datatype="*.nc";
 elif [ "$datatype" = "tif" ]; then
     datatype="*.tif";
+elif [ "$datatype" = "grib" ]; then
+    datatype="*.grib";
+elif [ "$datatype" = "vrt" ]; then
+    datatype="*.vrt";
 else
     echo "Unknown data type '${datatype}'. Must be 'nc' or 'tif' " >&2
     exit 1
