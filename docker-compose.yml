@@ -159,7 +159,7 @@ services:
       build:
         context: ./nginx
       container_name: gsky_nginx_proxy
-      # command: sh -c "/wait && nginx -g 'daemon off;'"
+      command: sh -c "/wait && nginx -g 'daemon off;'"
       restart: ${RESTART_POLICY}
       environment:
         - WAIT_HOSTS=gsky_ows:8080, gsky_mas_api:8888, gsky_wps_client:3000
