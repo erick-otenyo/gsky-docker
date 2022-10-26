@@ -33,7 +33,7 @@ services:
       - WORKER_NODES="gsky_rpc_1:6000","gsky_rpc_2:6000","gsky_rpc_3:6000","gsky_rpc_4:6000"
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
       - WEBHOOK_ENABLED=true
-      # - MEMCACHE_URI=gsky_memcached:11211
+      - MEMCACHE_URI=gsky_memcached:11211
     ports:
       - 8080
       - 9000
@@ -63,6 +63,7 @@ services:
       - ./mas_api/scripts/ingest.sh:/ingest.sh
       - ./ingest_scripts:/ingest_scripts
       - ./ows/rulesets:/rulesets
+      - ./webhooks/mas-hooks.yaml:/hooks.yaml
     environment:
       - WAIT_HOSTS=gsky_mas_db:5432
       - WAIT_TIMEOUT=120

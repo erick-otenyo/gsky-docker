@@ -1,0 +1,28 @@
+- id: ingest-gfs-forecast
+  execute-command: /ingest_scripts/gfs_forecast_ingest.sh
+  response-message: "GFS ingest command sent succesfully"
+  http-methods:
+    - POST
+  trigger-rule:
+    and:
+      - match:
+          type: payload-hmac-sha256
+          secret: [WEBHOOK_SECRET]
+          parameter:
+            source: header
+            name: X-Gsky-Signature
+  trigger-rule-mismatch-http-response-code: 400
+- id: ingest-era5-reanalysis
+  execute-command: /ingest_scripts/era5_reanalysis_ingest.sh
+  response-message: "ERA5 ingest command sent succesfully"
+  http-methods:
+    - POST
+  trigger-rule:
+    and:
+      - match:
+          type: payload-hmac-sha256
+          secret: [WEBHOOK_SECRET]
+          parameter:
+            source: header
+            name: X-Gsky-Signature
+  trigger-rule-mismatch-http-response-code: 400
