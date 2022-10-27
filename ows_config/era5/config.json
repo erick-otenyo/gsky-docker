@@ -477,5 +477,110 @@
             "scale_value": 21.166666666666668,
             "clip_value": 12
         }
+    ],
+    "processes": [{
+            "data_sources": [{
+                "data_source": "/gskydata/era5/era5monthly-temperature-2-m",
+                "rgb_products": [
+                    "era5monthly_temperature_2_m"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "era5monthly_temperature_2_m",
+            "title": "era5monthly_temperature_2_m Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        },
+        {
+            "data_sources": [{
+                "data_source": "/gskydata/era5/era5monthly-temperature-2-m-anomaly",
+                "rgb_products": [
+                    "era5monthly_temperature_2_m_anomaly"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "era5monthly_temperature_2_m_anomaly",
+            "title": "era5monthly_temperature_2_m_anomaly Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        },
+        {
+            "data_sources": [{
+                "data_source": "/gskydata/era5/era5monthly-precipitation-1-day",
+                "rgb_products": [
+                    "era5monthly_precipitation_1_day"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "era5monthly_precipitation_1_day",
+            "title": "era5monthly_precipitation_1_day Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        },
+        {
+            "data_sources": [{
+                "data_source": "/gskydata/era5/era5monthly-precipitation-1-day-anomaly",
+                "rgb_products": [
+                    "era5monthly_precipitation_1_day_anomaly"
+                ],
+                "metadata_url": "/templates/WPS/generic_value.tpl"
+            }],
+            "identifier": "era5monthly_precipitation_1_day_anomaly",
+            "title": "era5monthly_precipitation_1_day_anomaly Geometry Drill",
+            "abstract": "",
+            "max_area": 10000,
+            "pixel_stat": "mean",
+            "complex_data": [{
+                "identifier": "geometry",
+                "title": "Geometry",
+                "abstract": "",
+                "mime_type": "application/vnd.geo+json",
+                "schema": "http://geojson.org/geojson-spec.html",
+                "min_occurs": 1
+            }],
+            "literal_data": [{
+                "identifier": "geometry_id",
+                "title": "Geometry ID"
+            }]
+        }
     ]
 }
