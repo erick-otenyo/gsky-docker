@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   gsky_memcached:
-    image: memcached:${MEMCACHED_TAG}
+    image: memcached:1.6.12-alpine
     container_name: gsky_memcached
     restart: ${RESTART_POLICY}
     ports:
@@ -59,7 +59,6 @@ services:
     restart: ${RESTART_POLICY}
     volumes:
       - ${GSKY_DATA_FOLDER}:/gskydata
-      - /Users/otenyo/Projects/wmo/data-etl/public/tera:/gdata
       - ./mas_api/scripts/ingest.sh:/ingest.sh
       - ./ingest_scripts:/ingest_scripts
       - ./ows/rulesets:/rulesets

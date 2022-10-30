@@ -420,6 +420,254 @@
                 "gfs_wind_500_mb"
             ]
         },
+
+
+        {
+            "name": "gfs_wind_speed_10_m",
+            "title": "GFS Wind Speed 10 M",
+            "data_source": "/gskydata/gfs/gfs-wind-speed-10-m",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_speed_10_m"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 0,
+                        "G": 0,
+                        "B": 168,
+                        "A": 255
+                    },
+                    {
+                        "R": 29,
+                        "G": 126,
+                        "B": 110,
+                        "A": 255
+                    },
+                    {
+                        "R": 42,
+                        "G": 166,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 145,
+                        "G": 85,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 158,
+                        "G": 4,
+                        "B": 58,
+                        "A": 255
+                    },
+                    {
+                        "R": 123,
+                        "G": 17,
+                        "B": 123,
+                        "A": 255
+                    },
+                    {
+                        "R": 132,
+                        "G": 46,
+                        "B": 132,
+                        "A": 255
+                    },
+                    {
+                        "R": 141,
+                        "G": 77,
+                        "B": 141,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 108,
+                        "B": 150,
+                        "A": 255
+                    },
+                    {
+                        "R": 160,
+                        "G": 138,
+                        "B": 160,
+                        "A": 255
+                    },
+                    {
+                        "R": 168,
+                        "G": 168,
+                        "B": 168,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.8222222222222224,
+            "clip_value": 90.0
+        },
+        {
+            "name": "gfs_wind_speed_200_mb",
+            "title": "GFS Wind Speed 200 mb",
+            "data_source": "/gskydata/gfs/gfs-wind-speed-200-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_speed_200_mb"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 0,
+                        "G": 0,
+                        "B": 168,
+                        "A": 255
+                    },
+                    {
+                        "R": 29,
+                        "G": 126,
+                        "B": 110,
+                        "A": 255
+                    },
+                    {
+                        "R": 42,
+                        "G": 166,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 145,
+                        "G": 85,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 158,
+                        "G": 4,
+                        "B": 58,
+                        "A": 255
+                    },
+                    {
+                        "R": 123,
+                        "G": 17,
+                        "B": 123,
+                        "A": 255
+                    },
+                    {
+                        "R": 132,
+                        "G": 46,
+                        "B": 132,
+                        "A": 255
+                    },
+                    {
+                        "R": 141,
+                        "G": 77,
+                        "B": 141,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 108,
+                        "B": 150,
+                        "A": 255
+                    },
+                    {
+                        "R": 160,
+                        "G": 138,
+                        "B": 160,
+                        "A": 255
+                    },
+                    {
+                        "R": 168,
+                        "G": 168,
+                        "B": 168,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.8222222222222224,
+            "clip_value": 90.0
+        },
+        {
+            "name": "gfs_wind_speed_500_mb",
+            "title": "GFS Wind Speed 500 mb",
+            "data_source": "/gskydata/gfs/gfs-wind-speed-500-mb",
+            "time_generator": "mas",
+            "rgb_products": [
+                "gfs_wind_speed_500_mb"
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 0,
+                        "G": 0,
+                        "B": 168,
+                        "A": 255
+                    },
+                    {
+                        "R": 29,
+                        "G": 126,
+                        "B": 110,
+                        "A": 255
+                    },
+                    {
+                        "R": 42,
+                        "G": 166,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 145,
+                        "G": 85,
+                        "B": 0,
+                        "A": 255
+                    },
+                    {
+                        "R": 158,
+                        "G": 4,
+                        "B": 58,
+                        "A": 255
+                    },
+                    {
+                        "R": 123,
+                        "G": 17,
+                        "B": 123,
+                        "A": 255
+                    },
+                    {
+                        "R": 132,
+                        "G": 46,
+                        "B": 132,
+                        "A": 255
+                    },
+                    {
+                        "R": 141,
+                        "G": 77,
+                        "B": 141,
+                        "A": 255
+                    },
+                    {
+                        "R": 150,
+                        "G": 108,
+                        "B": 150,
+                        "A": 255
+                    },
+                    {
+                        "R": 160,
+                        "G": 138,
+                        "B": 160,
+                        "A": 255
+                    },
+                    {
+                        "R": 168,
+                        "G": 168,
+                        "B": 168,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.8222222222222224,
+            "clip_value": 90.0
+        },
         {
             "name": "gfs_relative_humidity_2_m",
             "title": "GFS Relative Humidity 2 M",

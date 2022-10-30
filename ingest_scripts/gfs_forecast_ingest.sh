@@ -15,9 +15,9 @@ set -xeu
 /ingest.sh -n gfs_wind_500_mb -p /gskydata/gfs/gfs-wind-500-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 
 # GFS Wind Speed
-# /ingest.sh -n gfs_wind_speed_10_m -p /gskydata/gfs/gfs-wind-speed-10-m -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
-# /ingest.sh -n gfs_wind_speed_200_mb -p /gskydata/gfs/gfs-wind-speed-200-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
-# /ingest.sh -n gfs_wind_speed_500_mb -p /gskydata/gfs/gfs-wind-speed-500-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
+/ingest.sh -n gfs_wind_speed_10_m -p /gskydata/gfs/gfs-wind-speed-10-m -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
+/ingest.sh -n gfs_wind_speed_200_mb -p /gskydata/gfs/gfs-wind-speed-200-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
+/ingest.sh -n gfs_wind_speed_500_mb -p /gskydata/gfs/gfs-wind-speed-500-mb -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
 
 # GFS Relative Humidity
 /ingest.sh -n gfs_relative_humidity_2_m -p /gskydata/gfs/gfs-relative-humidity-2-m -t tif -x "-conf /rulesets/namespace_yyy-mm-ddTH.tif.json"
