@@ -19,7 +19,7 @@
                         "R": 245,
                         "G": 245,
                         "B": 245,
-                        "A": 255
+                        "A": 0
                     },
                     {
                         "R": 79,
@@ -107,9 +107,10 @@
                     }
                 ]
             },
-            "offset_value": -0,
+            "offset_value": -0.0,
             "scale_value": 5.08,
-            "clip_value": 50
+            "clip_value": 50.0
+
         },
         {
             "name": "gfs_temperature_2_m",
