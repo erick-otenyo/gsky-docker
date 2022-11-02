@@ -763,9 +763,8 @@
                 ]
             },
             "offset_value": -0.0,
-            "scale_value": 2.54,
-            "clip_value": 100.0
-
+            "scale_value": 0.996078431372549,
+            "clip_value": 255.0
         },
         {
             "name": "gfs_relative_humidity_200_mb",
