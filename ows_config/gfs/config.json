@@ -979,9 +979,9 @@
                     }
                 ]
             },
-            "offset_value": -95.0,
-            "scale_value": 23.09090909090909,
-            "clip_value": 11.0
+            "offset_value": -950.0,
+            "scale_value": 4.535714285714286,
+            "clip_value": 56.0
         },
         {
             "name": "gfs_precipitable_water_total",
