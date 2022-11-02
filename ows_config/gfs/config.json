@@ -906,6 +906,12 @@
             "palette": {
                 "interpolate": true,
                 "colours": [{
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 0
+                    },
+                    {
                         "R": 8,
                         "G": 16,
                         "B": 48,
@@ -1003,9 +1009,9 @@
                     }
                 ]
             },
-            "offset_value": -90.0,
-            "scale_value": 13.87978142076503,
-            "clip_value": 18.299999999999997
+            "offset_value": -0.0,
+            "scale_value": 2.3453370267774702,
+            "clip_value": 108.3
         },
         {
             "name": "gfs_precipitable_water_total",
