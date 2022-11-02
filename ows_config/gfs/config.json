@@ -763,7 +763,7 @@
                 ]
             },
             "offset_value": -0.0,
-            "scale_value": 0.996078431372549,
+            "scale_value": 1,
             "clip_value": 255.0
         },
         {
