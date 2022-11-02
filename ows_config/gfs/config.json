@@ -420,8 +420,6 @@
                 "gfs_wind_500_mb"
             ]
         },
-
-
         {
             "name": "gfs_wind_speed_10_m",
             "title": "GFS Wind Speed 10 M",
@@ -675,7 +673,50 @@
             "time_generator": "mas",
             "rgb_products": [
                 "gfs_relative_humidity_2_m"
-            ]
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 174,
+                        "G": 110,
+                        "B": 56,
+                        "A": 255
+                    },
+                    {
+                        "R": 174,
+                        "G": 124,
+                        "B": 57,
+                        "A": 255
+                    },
+                    {
+                        "R": 97,
+                        "G": 175,
+                        "B": 71,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 151,
+                        "B": 173,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_relative_humidity_200_mb",
@@ -684,7 +725,50 @@
             "time_generator": "mas",
             "rgb_products": [
                 "gfs_relative_humidity_200_mb"
-            ]
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 174,
+                        "G": 110,
+                        "B": 56,
+                        "A": 255
+                    },
+                    {
+                        "R": 174,
+                        "G": 124,
+                        "B": 57,
+                        "A": 255
+                    },
+                    {
+                        "R": 97,
+                        "G": 175,
+                        "B": 71,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 151,
+                        "B": 173,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_relative_humidity_500_mb",
@@ -693,7 +777,50 @@
             "time_generator": "mas",
             "rgb_products": [
                 "gfs_relative_humidity_500_mb"
-            ]
+            ],
+            "palette": {
+                "interpolate": true,
+                "colours": [{
+                        "R": 174,
+                        "G": 110,
+                        "B": 56,
+                        "A": 255
+                    },
+                    {
+                        "R": 174,
+                        "G": 124,
+                        "B": 57,
+                        "A": 255
+                    },
+                    {
+                        "R": 97,
+                        "G": 175,
+                        "B": 71,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 151,
+                        "B": 173,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    },
+                    {
+                        "R": 56,
+                        "G": 71,
+                        "B": 116,
+                        "A": 255
+                    }
+                ]
+            },
+            "offset_value": -0.0,
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_mean_sea_level_pressure",
