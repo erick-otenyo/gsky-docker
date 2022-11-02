@@ -763,8 +763,8 @@
                 ]
             },
             "offset_value": -0.0,
-            "scale_value": 2.618556701030928,
-            "clip_value": 97.0
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_relative_humidity_200_mb",
@@ -863,8 +863,8 @@
                 ]
             },
             "offset_value": -0.0,
-            "scale_value": 2.618556701030928,
-            "clip_value": 97.0
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_relative_humidity_500_mb",
@@ -963,8 +963,8 @@
                 ]
             },
             "offset_value": -0.0,
-            "scale_value": 2.618556701030928,
-            "clip_value": 97.0
+            "scale_value": 2.54,
+            "clip_value": 100.0
         },
         {
             "name": "gfs_mean_sea_level_pressure",
