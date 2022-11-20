@@ -40,6 +40,7 @@ services:
   gsky_mas_db:
     image: postgis/postgis:12-master
     container_name: gsky_mas_db
+    restart: ${RESTART_POLICY}
     volumes:
         - gsky_mas_db:/var/lib/postgresql
     ports:
