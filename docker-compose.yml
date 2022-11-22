@@ -23,7 +23,7 @@ services:
       - ./ows/templates/WCS_GetCapabilities.tpl:/gsky/share/gsky/templates/WCS_GetCapabilities.tpl
       - ./ows/templates/WPS:/templates/WPS
       - ./ows/rulesets:/rulesets
-      - ${GSKY_OWS_GEOM_FILE_VOLUME}:/gsky/geodata/geom.gpkg
+      - ${GSKY_OWS_GEODATA_VOL}:/gsky/geodata
     environment: 
       - WAIT_HOSTS=gsky_mas_db:5432, gsky_rpc_1:6000, gsky_rpc_2:6000, gsky_rpc_3:6000, gsky_rpc_4:6000
       - WAIT_TIMEOUT=120
