@@ -1,0 +1,9 @@
+{
+    "rule_sets": [{
+        "namespace": "ns_path",
+        "srs_text": "",
+        "proj4_text": "",
+        "pattern": "^(?P<namespace>[\\w\\d_]+)_(?P<year>\\d\\d\\d\\d)-(?P<month>\\d\\d)-(?P<day>\\d\\d)T(?P<hour>\\d\\d):00:00.000Z\\.tif$",
+        "time_axis": {}
+    }]
+}

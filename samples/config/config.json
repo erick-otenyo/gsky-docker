@@ -1,0 +1,43 @@
+{
+    "service_config": {
+        "ows_hostname": "",
+        "ows_protocol": "http",
+        "mas_address": "",
+        "worker_nodes": []
+    },
+    "layers": [{
+        "name": "layer_name",
+        "title": "Layer Title",
+        "data_source": "/gskydata/path/to/your/data",
+        "time_generator": "mas",
+        "rgb_products": [
+            "dataset_namespace"
+        ]
+    }],
+    "processes": [{
+        "data_sources": [{
+            "data_source": "/gskydata/path/to/your/data",
+            "rgb_products": [
+                "dataset_namespace"
+            ],
+            "metadata_url": "/templates/WPS/generic_value.tpl"
+        }],
+        "identifier": "layer_wps_identifier",
+        "title": "Layer WPS Title",
+        "abstract": "",
+        "max_area": 10000,
+        "pixel_stat": "mean",
+        "complex_data": [{
+            "identifier": "geometry",
+            "title": "Geometry",
+            "abstract": "",
+            "mime_type": "application/vnd.geo+json",
+            "schema": "http://geojson.org/geojson-spec.html",
+            "min_occurs": 1
+        }],
+        "literal_data": [{
+            "identifier": "geometry_id",
+            "title": "Geometry ID"
+        }]
+    }]
+}
