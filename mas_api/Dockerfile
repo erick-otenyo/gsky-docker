@@ -20,6 +20,7 @@ RUN ./build_gsky.sh
 COPY ./scripts/ingest.sh /
 COPY ./scripts/ingest_data.sh /
 COPY ./scripts/reset_mas.sh /
+COPY ./scripts/shard_delete.sh /
 
 
 COPY ./hooks.yaml /hooks.yaml

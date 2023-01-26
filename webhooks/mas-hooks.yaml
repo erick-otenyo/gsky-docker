@@ -26,3 +26,56 @@
             source: header
             name: X-Gsky-Signature
   trigger-rule-mismatch-http-response-code: 400
+- id: ingest-layer
+  execute-command: /ingest_scripts/ingest_layer.sh
+  http-methods:
+    - POST
+  pass-arguments-to-command:
+    - source: payload
+      name: namespace
+    - source: payload
+      name: datasource
+  trigger-rule:
+    and:
+    - match:
+        type: payload-hmac-sha256
+        secret: [WEBHOOK_SECRET]
+        parameter:
+          source: header
+          name: X-Gsky-Signature
+    - match:
+          type: regex
+          regex: ^-n .+
+          parameter:
+            source: payload
+            name: namespace
+    - match:
+          type: regex
+          regex: -p .+
+          parameter:
+            source: payload
+            name: datasource
+  trigger-rule-mismatch-http-response-code: 400
+- id: delete-shard
+  execute-command: /shard_delete.sh
+  http-methods:
+    - POST
+  include-command-output-in-response: true
+  pass-arguments-to-command:
+    - source: payload
+      name: shard
+  trigger-rule:
+    and:
+      - match:
+          type: payload-hmac-sha256
+          secret: [WEBHOOK_SECRET]
+          parameter:
+            source: header
+            name: X-Gsky-Signature
+      - match:
+          type: regex
+          regex: ^.+
+          parameter:
+            source: payload
+            name: shard
+  trigger-rule-mismatch-http-response-code: 400
